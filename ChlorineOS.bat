@@ -1,19 +1,10 @@
 @echo off
-title ChlorineOS - v1.2
+title ChlorineOS - v1.2.2
 color 0b
 
-REM gets latest version
-ECHO Getting Latest Version
-CURL -o ChlorineOS.bat "https://raw.githubusercontent.com/Lightning3240/ChlorineOS/master/ChlorineOS.bat?_=%random%" -L
-echo.
-pause
-goto start
+
 
 :start
-cls
-goto lock
-
-:lock
 cls
 echo ===========================
 echo ChlorineOS
@@ -72,7 +63,7 @@ echo ChlorineOS:
 echo.==========================
 echo Details:
 echo.
-echo Version = 1.2.1
+echo Version = 1.2.2
 echo.     
 echo.===========================
 echo Created by: Adam Salt
@@ -93,7 +84,17 @@ set /p input=
 
 if %input% == 1 goto menu
 if %input% == 2 goto colorpick
+if %input% == 3 goto updater
+
+
+REM // Run the updater + get latest version
+:updater
+echo.
+echo Getting Latest Version
+curl -o ChlorineOS.bat "https://raw.githubusercontent.com/Lightning3240/ChlorineOS/master/ChlorineOS.bat?_=%random%" -L
+echo.
 pause
+EXIT
 
 REM // Power Options
 :power
