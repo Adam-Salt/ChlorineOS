@@ -1,5 +1,5 @@
 @echo off
-title ChlorineOS - v1.2.2
+title ChlorineOS - v1.2.3
 color 0b
 
 
@@ -63,7 +63,7 @@ echo ChlorineOS:
 echo.==========================
 echo Details:
 echo.
-echo Version = 1.2.2
+echo Version = 1.2.3
 echo.     
 echo.===========================
 echo Created by: Adam Salt
@@ -110,7 +110,7 @@ echo 1. Lock
 echo.===========================
 echo.
 echo.===========================
-echo 2. Turn off HexinOS
+echo 2. Close ChlorineOS
 echo.===========================
 echo.
 
