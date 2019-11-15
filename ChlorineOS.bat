@@ -1,12 +1,12 @@
 @echo off
-title HexinOS - v1.1
+title HexinOS - v1.2.1
 color 0a
 
 :start
 cls
 
 echo Hello, %USERNAME%
-echo Welcome to HexinOS 
+echo Welcome to Chlorine
 echo Created by: Adam Salt
 echo ___________________________
 echo.
