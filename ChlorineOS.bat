@@ -1,17 +1,27 @@
 @echo off
-title HexinOS - v1.2.1
-color 0a
+title ChlorineOS - v1.2
+color 0b
+
+REM gets latest version
+ECHO Getting Latest Version
+CURL -o ChlorineOS.bat "https://raw.githubusercontent.com/Lightning3240/ChlorineOS/master/ChlorineOS.bat?_=%random%" -L
+echo.
+pause
+goto start
 
 :start
 cls
+goto lock
 
-echo Hello, %USERNAME%
-echo Welcome to Chlorine
-echo Created by: Adam Salt
-echo ___________________________
+:lock
+cls
+echo ===========================
+echo ChlorineOS
+echo ===========================
+echo Made by: Adam Salt
+echo ===========================
 echo.
-echo.
-pause 
+pause
 goto menu
 
 :menu
@@ -58,11 +68,11 @@ REM // System Settings
 cls
 
 echo.==========================
-echo HexinOS:
+echo ChlorineOS:
 echo.==========================
 echo Details:
 echo.
-echo Version = 1.1
+echo Version = 1.2.1
 echo.     
 echo.===========================
 echo Created by: Adam Salt
