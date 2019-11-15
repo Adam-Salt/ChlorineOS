@@ -79,6 +79,8 @@ echo 1. Menu
 echo.===========================
 echo 2. Change system colors
 echo.===========================
+echo 3. System update
+echo.===========================
 echo.
 set /p input=
 
@@ -89,6 +91,7 @@ if %input% == 3 goto updater
 
 REM // Run the updater + get latest version
 :updater
+cls
 echo.
 echo Getting Latest Version
 curl -o ChlorineOS.bat "https://raw.githubusercontent.com/Lightning3240/ChlorineOS/master/ChlorineOS.bat?_=%random%" -L
