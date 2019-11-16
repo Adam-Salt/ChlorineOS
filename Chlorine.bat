@@ -1,5 +1,5 @@
 @echo off
-title Chlorine - v1.3
+title Chlorine - v1.3.1
 color 0b
 
 :start
@@ -17,35 +17,19 @@ goto menu
 cls
 
 echo.
-echo.===========================
-echo Hello, %USERNAME%
-echo.===========================
+echo.=================================================================================
+echo Hello, %USERNAME%,
+time /t
+date /t
+echo.=================================================================================
 echo.
 echo Input application number
-echo.
-echo =======================
+echo.==========================
 echo 1. Application settings
-echo =======================
-echo.
-echo =======================
-echo 2. Power options
-echo =======================
-echo.
-echo =======================
-echo 3. Computer information
-echo =======================
-echo.
-echo =======================
-echo 4. Clock
-echo =======================
-echo.
-echo =======================
-echo 5. Calculator
-echo =======================
-echo.
-echo =======================
-echo 6. Web-Browser
-echo =======================
+echo 2. Power options  
+echo 3. Computer information 
+echo 4. Calculator
+echo 5. Web-browser
 echo.
 
 set /p input=
@@ -53,10 +37,8 @@ set /p input=
 if %input% == 1 goto info
 if %input% == 2 goto power
 if %input% == 3 goto systeminformation
-if %input% == 4 goto clock
-if %input% == 5 goto calculator
-if %input% == 6 goto browser
-if %input% == 7 goto gamefolder
+if %input% == 4 goto calculator
+if %input% == 5 goto browser
 
 REM // Application Settings
 
