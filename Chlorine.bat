@@ -50,7 +50,7 @@ echo Chlorine:
 echo.==========================
 echo Details:
 echo.
-echo Version = 1.3
+echo Version = 1.3.1
 echo.     
 echo.===========================
 echo Created by: Adam Salt
